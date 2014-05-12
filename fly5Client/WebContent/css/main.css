@@ -1,0 +1,115 @@
+.container {
+	width: 1280px !important;
+}
+
+.header {
+	background: linear-gradient(45deg, #020031 0%, #6D3353 100%) repeat
+		scroll 0 0 rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #ddd;
+	border-radius: 2px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px
+		rgba(0, 0, 83, 0.2) inset;
+	padding: 10px 20px;
+	color: #ffffff;
+}
+
+.header div{
+	text-align:right;
+	margin-right: 50px;
+}
+
+.section {
+	background-image: url("../images/6.jpg");
+	background-repeat: no-repeat;
+	padding: 10px;
+	height: 550px;
+}
+
+.form-signin {
+	max-width: 368px;
+	margin-top:15px;
+	padding: 15px;
+	background-color: #fff;
+}
+
+.form-signin .form-control, .form-inline {
+	font-size: 14px;
+	height: auto;
+	padding: 10px; -webkit-box-sizing : border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input, .form-signin select {
+	margin-bottom: 5px;
+}
+
+.form-signin input[type="text"], .form-signin select {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="radio"] {
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="date"], .form-signin .passenger {
+	font-size: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	color: #555555;
+	vertical-align: middle;
+}
+.form-signin input[type="date"] {
+    height: auto;
+	padding: 10px;
+}
+.form-signin .passenger{
+	height: 35px;
+	padding: 5px;
+	margin: 5px 20px;
+	width: 15%;
+}
+
+.passenger-info .control-label {
+	font-weight: normal;
+	width: 30%;
+}
+
+.passenger-info {
+	text-align: center;
+}
+
+.form-inline{
+	width: 40%;
+	margin-top: 15px;
+	background-color: #fff;
+}
+
+.form-inline input {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	color: #555555;
+	height: auto;
+	padding:10px;
+	margin: 10px 5px;
+	vertical-align: middle;
+}
+
+.ui-widget-header {
+	background: none !important;
+}
+
+div.ui-datepicker{
+  font-size:12px;
+}

@@ -1,0 +1,50 @@
+.admin-section {
+	border: 1px solid #F4F4F4;
+	min-height:550px;
+	padding:5px;
+}
+
+.view-flight, .view-customer, .view-reservation, .view-employee {
+	margin-top: 20px;
+	width: 95%;
+}
+
+.view-flight button, .view-employee button {
+	margin-bottom: 2px;
+}
+
+td, th {
+	text-align:center;
+}
+
+.form-control {
+   font-size: 14px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+   margin-bottom:5px;	
+}
+
+.modal-header {
+	background: linear-gradient(45deg, #f7f7f7 0%, #fff 100%) repeat
+		scroll 0 0 rgba(0, 0, 0, 0);
+	border-radius:4px;
+}
+
+.reservation-item {
+	text-align: center;
+    height: 10px;
+    padding-left: 20px;
+    margin-top: -15px;
+}
+
+.expander {
+	padding-left: 20px;
+	background-color: #f7f7f7;  
+}
+
+.view-reservation hr {
+	margin-top: 0px;
+}

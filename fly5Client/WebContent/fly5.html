@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript"
+	src="js/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/util.js"></script>
+<title>Fly5 Airlines</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>Fly5 Airlines</h1>
+			<div><a style="color: #fff;text-decoration:none;" href="signin.jsp">My Account</a></div>
+		</header>
+		<section class="section" id="section">
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="active"><a href="#search" data-toggle="tab">Search</a></li>
+				<li><a href="#status" data-toggle="tab">Flight Status</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="search">
+					<form class="form-signin" action="search.do" method="post">
+						<label class="radio-inline"><input type="radio"
+							name="trip" checked="checked" value="1">One Way</label> <!-- <label class="radio-inline"><input
+							checked type="radio" name="trip" value="2">Round Trip</label> --> <input
+							type="text" class="form-control" name="source" placeholder="From"
+							required autofocus> <input type="text"
+							class="form-control" name="destination" placeholder="To" required
+							autofocus>
+						<div class="controls controls-row">
+							<input type="date" id="from_datepicker" name="departureDate" class="span"
+								placeholder="Onward date"> <!-- <input name="returnDates" class="span"
+								type="date" placeholder="Return date" id="return_datepicker"> -->
+						</div>
+						<select class="form-control" name="class">
+							<option>Economy</option>
+							<option>Business</option>
+							<option>First</option>
+						</select>
+
+						<div class="passenger-info">
+							<div class="controls controls-row">
+								<label class="control-label">Adults <small>(12+)</small></label>
+								<label class="control-label">Children <small>(2-11)</small></label>
+								<label class="control-label">Infants <small>(under
+										2)</small></label>
+							</div>
+							<div class="controls controls-row">
+								<select class="passenger" name="adult">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select> <select class="passenger" name="child">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select> <select class="passenger" name="infant">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+						</div>
+						<button class="btn btn-primary btn-lg btn-block" type="submit">Find
+							Flights</button>
+						<div class="has-error">
+							<label class="control-label"></label>
+						</div>
+						<script>
+							$(function() {
+
+								var minDate = new Date();
+								var maxYear = minDate.getFullYear() + 1;
+								var maxMonth = minDate.getMonth();
+								var maxDay = minDate.getDate() - 1;
+
+								var maxDate = new Date(maxYear, maxMonth,
+										maxDay);
+
+								$("#from_datepicker").datepicker({
+									minDate : minDate,
+									maxDate : maxDate
+								});
+								$("#return_datepicker").datepicker({
+									minDate : minDate,
+									maxDate : maxDate
+								});
+							});
+						</script>
+					</form>
+				</div>
+				<div class="tab-pane fade" id="status">
+					<form class="form-inline" action="Status.do" method="post">
+						<input type="text" class="input-small" name="bookingRefNo"
+							placeholder="Booking Reference No" required autofocus><input
+							type="text" class="input-small" name="lname"
+							placeholder="Last name" required autofocus>
+						<button class="btn btn-primary" type="submit">Check</button>
+						<div class="has-error">
+							<label class="control-label"></label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script>
+		
+	</script>
+</body>
+</html>
